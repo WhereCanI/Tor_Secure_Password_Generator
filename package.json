@@ -1,0 +1,41 @@
+{
+  "name": "tor_secure_password_generator",
+  "version": "1.0.0",
+  "description": "A secure open source password generator located on the TOR network.",
+  "main": "app.js",
+  "scripts": {
+    "nodestart": "nodemon ./Server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhereCanI/Tor_Secure_Password_Generator.git"
+  },
+  "keywords": [
+    "TOR",
+    "Onion",
+    "Secure",
+    "Password",
+    "Generator"
+  ],
+  "author": "Mike Andersen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhereCanI/Tor_Secure_Password_Generator/issues"
+  },
+  "homepage": "https://github.com/WhereCanI/Tor_Secure_Password_Generator#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "terser-webpack-plugin": "^5.1.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-ejs": "^4.3.0",
+    "koa-helmet": "^6.1.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0"
+  }
+}
