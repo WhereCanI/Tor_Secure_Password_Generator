@@ -4,7 +4,8 @@
   "description": "A secure open source password generator located on the TOR network.",
   "main": "app.js",
   "scripts": {
-    "nodestart": "nodemon ./Server/app.js"
+    "nodestart": "nodemon ./Server/app.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

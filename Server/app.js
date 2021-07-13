@@ -22,7 +22,13 @@ render(app, {
 
 // ROUTES
 router.get("/", async ctx => {
-    await ctx.render('passwordGenerator');
+    await ctx.render('PasswordGenerator');
 });
+
+router.get("/about", async ctx => {
+    await ctx.render('AboutUsPage');
+});
+
+app.use(router.routes());
 
 app.listen(7005, () => console.log("Password Generator server - Running."));
