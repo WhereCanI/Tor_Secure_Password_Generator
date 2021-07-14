@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile
     image: passwordgen
     container_name: passwordgen
-    # ports:
-    #  - 7005:8089
+    #ports:
+    # - 7005:7005
     restart: unless-stopped
     networks:
       - app-network
@@ -21,7 +21,7 @@ services:
       - "7006:7006"
     volumes:
       - web-root:/var/www/html
-      - ./Server/Nginx-conf:/etc/nginx/conf.d
+      - ./Server/Nginx-Conf:/etc/nginx/conf.d
     depends_on:
       - passwordgen
     networks:

@@ -10,10 +10,8 @@ USER node
 
 RUN npm install
 
-RUN npm run build
-
 COPY --chown=node:node . .
 
 EXPOSE 7005
 
-CMD [ "node", "app.js" ]
+CMD [ "node", "Server/app.js" ]
