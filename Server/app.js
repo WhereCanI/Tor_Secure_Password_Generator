@@ -1,5 +1,3 @@
-const http2 = require('http2');
-const fs = require('fs');
 const Koa = require('koa');
 const cors = require('@koa/cors');
 const helmet = require('koa-helmet');
@@ -11,7 +9,16 @@ const KoaRouter = require('koa-router');
 const router = new KoaRouter();
 
 app.proxy = true;
-app.use(helmet());
+app.use(helmet.dnsPrefetchControl());
+app.use(helmet.expectCt());
+app.use(helmet.frameguard());
+app.use(helmet.hidePoweredBy());
+app.use(helmet.hsts());
+app.use(helmet.ieNoOpen());
+app.use(helmet.noSniff());
+app.use(helmet.permittedCrossDomainPolicies());
+app.use(helmet.referrerPolicy());
+app.use(helmet.xssFilter());
 app.use(serve('.'));
 app.use(cors());
 
@@ -35,17 +42,4 @@ router.get("/about", async ctx => {
 
 app.use(router.routes());
 
-app.listen(7005, () => console.log("Password Generator server - Running."));
-//const options = {
-//    key: fs.readFileSync(path.join(__dirname, './Certificates/server.key')),
-//    cert:  fs.readFileSync(path.join(__dirname, './Certificates/server.crt')),
-//    allowHTTP1: true
-//};
-  
-//http2.createSecureServer(options, app.callback()).listen(7005, (err) => {
-//    if (err) {
-//        console.log(err);
-//        throw new Error(err);
-//    }
-//    console.log('Password Generator server - Running');
-//});
+app.listen(7007, () => console.log("Password Generator server - Running."));
