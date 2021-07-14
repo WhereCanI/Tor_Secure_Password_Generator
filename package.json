@@ -1,6 +1,6 @@
 {
   "name": "tor_secure_password_generator",
-  "version": "1.1",
+  "version": "1.0.0",
   "description": "A secure open source password generator located on the TOR network.",
   "main": "app.js",
   "scripts": {
