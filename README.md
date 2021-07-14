@@ -40,6 +40,11 @@ The Tor Secure Password Generator is an open source password generator that will
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+To view the password generator, please open your Tor browser and paste the following url below:
+```
+ltyuzvwxgi4xtufkmwij5moi2n6bdx4xsjn47qpqtpswqzsubwbuvead.onion
+```
+
 ## License
 
 Distributed under the MIT License. See [LICENSE](https://github.com/WhereCanI/Tor_Secure_Password_Generator/blob/main/LICENSE.md) for more information.
