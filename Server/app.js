@@ -42,4 +42,4 @@ router.get("/about", async ctx => {
 
 app.use(router.routes());
 
-app.listen(7007, () => console.log("Password Generator server - Running."));
+app.listen(7005, () => console.log("Password Generator server - Running."));
