@@ -30,7 +30,6 @@ The Tor Secure Password Generator is an open source password generator that will
 
 - Node.js
 - Koa.js
-- Typescript
 - CSS
 - Nginx
 - Docker
